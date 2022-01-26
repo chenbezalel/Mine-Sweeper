@@ -10,8 +10,8 @@ body {
 .container {
     margin: auto;
     background-color: lightyellow;
-    width: 500px;
-    height: 400px;
+    width: 600px;
+    height: 700px;
     border: 5px solid white;
     border-radius: 5px;
 
@@ -22,21 +22,22 @@ h1 {
     font-size: 50px;
     font-style: italic;
     margin-top: 5px;
+    margin-bottom: 5px;
     color: rgb(139, 0, 0);
-    text-shadow: -2px -2px 4px rgba(169,169,169,0.86);
+    text-shadow: -2px -2px 4px rgba(169, 169, 169, 0.86);
 }
 
 .board {
-    width: 150px;
-    height: 150px;
-    /* border: 3px solid black; */
+
     margin: auto;
     border-spacing: 5px;
     border-collapse: collapse;
+    background-repeat: repeat;
+    background-color: gray;
 }
 
 .board td {
-    border: 3px solid black;
+    border: 2px solid white;
     width: 30px;
     height: 30px;
     font-size: 20px;
@@ -45,36 +46,70 @@ h1 {
 }
 
 .board td:hover {
-    background-color: rgb(250, 242, 234);
+    background-color: rgba(248, 244, 239, 0.644);
     cursor: pointer;
 }
 
-.board img {
-    width: 20px;
+.mine {
+    width: 25px;
+}
+
+.cover {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.shown {
+    background: lightgoldenrodyellow;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: lightsalmon;
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(246, 130, 84);
 }
 
 .negs-1 {
     color: lightseagreen
 }
+
 .negs-2 {
     color: orange;
 }
+
 .negs-3 {
     color: salmon;
 }
+
 .negs-4 {
     color: purple;
 }
+
 .negs-5 {
     color: red;
 }
+
 .negs-6 {
     color: limegreen;
 }
+
 .negs-7 {
     color: blue;
 }
+
 .negs-8 {
     color: brown;
 }
-
