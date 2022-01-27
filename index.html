@@ -12,10 +12,23 @@
 <body onload="initGame()">
 
    <div class="container">
+
       <h1>Mine-Sweeper</h1>
       <button onclick="chekLevel(4, 2)">Beginner</button>
       <button onclick="chekLevel(8, 12)">Medium</button>
       <button onclick="chekLevel(12, 30)">Expert</button>
+
+      <div class="details">
+         <div class="tools">
+            <div class="lives">lives:💝💝💝</div>
+            <div class="hint">hints: 💡💡💡</div>
+         </div>
+         <div class="restart-bkg">
+            <button class="restart" onclick="initGame()"></button>
+         </div>
+         <div class="timer">Time pass:</div>
+      </div>
+      
       <table class="board">
       </table>
 

@@ -9,11 +9,12 @@ body {
 
 .container {
     margin: auto;
-    background-color: lightyellow;
+    background: rgb(255,255,224);
+    background: radial-gradient(circle, rgba(255,255,224,1) 84%, rgba(251,251,251,1) 100%);;
     width: 600px;
     height: 700px;
     border: 5px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
 
 }
 
@@ -27,8 +28,55 @@ h1 {
     text-shadow: -2px -2px 4px rgba(169, 169, 169, 0.86);
 }
 
-.board {
+.details > * {
+    /* border: 1px solid black; */
+    display: inline-block;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-shadow: -2px -2px 4px rgba(169, 169, 169, 0.86);
+}
 
+.tools {
+    float: left;
+    width: 140px;
+}
+
+.restart{
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/gameOn.png);
+    background-size: cover;
+}
+
+.restart-bkg{
+    margin-left: 50px;
+    border: 2px solid black;
+    border-radius: 2px;
+    height: 60px;
+    width: 60px;
+    background-color: cornflowerblue;
+}
+
+.timer {
+    text-align: left;
+    width: 170px;
+    padding-top: 20px;
+    float: right;
+    font-size: 18px;
+}
+
+
+.board {
+    /* display: inline-block; */
     margin: auto;
     border-spacing: 5px;
     border-collapse: collapse;
@@ -38,8 +86,8 @@ h1 {
 
 .board td {
     border: 2px solid white;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     font-size: 20px;
     font-variant-numeric: lining-nums;
     font-weight: bold;
@@ -61,21 +109,24 @@ h1 {
 }
 
 .shown {
-    background: lightgoldenrodyellow;
+    background: rgb(216, 216, 215);
 }
 
 button {
-    width: 100px;
-    height: 30px;
-    border-radius: 5px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    width: 80px;
+    height: 20px;
+    border-radius: 3px;
     background-color: lightsalmon;
     color: white;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: bolder;
     border: 2px solid black;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    /* margin-top: 10px;
+    margin-bottom: 30px; */
+    margin: 10px 5px 10px 5px;
 }
+
 
 button:hover {
     cursor: pointer;
