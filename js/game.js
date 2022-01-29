@@ -132,7 +132,9 @@ function cellClicked(elCell, i, j) {
         }
     }
 
+    console.log(gShownCount);
     isVictory();
+
 }
 
 
