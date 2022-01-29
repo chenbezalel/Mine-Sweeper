@@ -20,13 +20,19 @@
 
       <div class="details">
          <div class="tools">
-            <div class="lives">lives:💝💝💝</div>
-            <div class="hints" onclick="hintClicked(this)">hints: 💡💡💡</div>
+            <div class="lives"></div>
+            <div class="hints" onclick="hintClicked(this)"></div>
+            <div class="safe-click">
+               <button class="safe-btn" onclick="safeClick()">safe-click</button><br>
+            </div>
+            <div class="clicks-available">3 clicks available</div>
          </div>
          <div class="restart-bkg">
             <button class="restart" onclick="initGame()"></button>
          </div>
-         <div class="timer">Time pass:</div>
+         <div class="timer">
+            <div class="curr-time">Time pass:</div>
+         </div>
       </div>
       
       <table class="board">
