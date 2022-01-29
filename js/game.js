@@ -294,6 +294,7 @@ function setMinesNegsCount(idxI, idxJ, board) {
 }
 
 function chekLevel(size = 4, minesNum = 2) {
+    initGame();
     gLevel.SIZE = size;
     gLevel.MINES = minesNum,
         buildBoard();
