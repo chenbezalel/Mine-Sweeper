@@ -244,7 +244,6 @@ function isVictory() {
     if (gFlaggedCount + gShownCount === gLevel.SIZE ** 2) {
         if (gFlaggedCount === gLevel.MINES) {
             gIsVictory = true;
-            bestScore();
             gameOver();
         }
     }
@@ -294,10 +293,9 @@ function setMinesNegsCount(idxI, idxJ, board) {
 }
 
 function chekLevel(size = 4, minesNum = 2) {
-    initGame();
     gLevel.SIZE = size;
     gLevel.MINES = minesNum,
-        buildBoard();
+    buildBoard();
     renderBoard(gBoard);
 }
 
@@ -394,5 +392,5 @@ function applyHint(idxI, idxJ) {
 //     var elBestTime = document.querySelector('.best-time')
 //     elBestTime.innerText = `Best time: ${localStorage.bestScore}`;
 
-// 
+//
 // }
